@@ -123,6 +123,10 @@ def calculate_slots(date_str, needed_duration):
 def home():
     return render_template('index.html')
 
+@app.route('/admin')
+def admin():
+    return render_template('index.html')
+
 @app.route('/api/data')
 def get_data():
     return jsonify({
